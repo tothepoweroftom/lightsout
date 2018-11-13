@@ -58,6 +58,8 @@ Board.prototype.handleClickEvent = function (e) {
     this.triggerCell(cell[0], cell[1]);
     if (this.checkState() === Board.GRID_COUNT) {
       alert("VICTORY");
+      this.clear();
+      this.cells = this._createMatrix(Board.GRID_WIDTH, Board.GRID_HEIGHT);
     };
 
     this.show();
