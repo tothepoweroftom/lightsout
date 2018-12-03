@@ -13,8 +13,8 @@ function Board(canvas) {
 
 
 Board.CELL_PADDING = 1;
-Board.GRID_WIDTH = 3;
-Board.GRID_HEIGHT = 3;
+Board.GRID_WIDTH = 5;
+Board.GRID_HEIGHT = 5;
 Board.GRID_COUNT = Board.GRID_WIDTH * Board.GRID_HEIGHT;
 
 Board.prototype._createMatrix = function (width, height, opt_val) {
